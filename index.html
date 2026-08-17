@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUICKT | Lista de Precios Distribuidores</title>
-    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -56,7 +56,7 @@
     <!-- Main Catalog Grid -->
     <main class="container mx-auto px-4 mb-12">
         <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
+            <!-- Productos cargados dinámicamente -->
         </div>
         <div id="noResults" class="hidden text-center py-12 text-gray-500 text-lg">
             No se encontraron productos con los criterios de búsqueda.
@@ -69,20 +69,36 @@
         <p class="text-xs mt-2 text-gray-500">QUICKT S.A.C. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Script de lógica de carga y filtrado -->
+    <!-- Script con base de datos integrada -->
     <script>
-        let products = [];
+        const products = [
+            { marca: "ACER", sku: "AC421", caracteristicas: "Acer Aspire Lite Core i7-13620H 16GB DDR5 512GB SSD 15.6\" FHD WIN11 AL15-72P-7055 WINDOWS 11 HOME", tipo: "LAPTOP", precio: 2550, imagen: "fotos/AC421.jpg" },
+            { marca: "ACER", sku: "AC415", caracteristicas: "ACER ASPIRE LITE AL15-43P RYZEN 7 5825U 32GB DDR4 1TB SSD 15.6\" FHD WIN11 AL15-43P", tipo: "LAPTOP", precio: 2850, imagen: "fotos/AC415.jpg" },
+            { marca: "ACER", sku: "AC417", caracteristicas: "ACER NITRO LITE NL16-71G-58BW i5 13420H 16GB RAM 512GB SSD RTX 3050 6GB 16” WUXGA 165Hz NH.DAAAL.002", tipo: "LAPTOP", precio: 3350, imagen: "fotos/AC417.jpg" },
+            { marca: "ACER", sku: "AC557", caracteristicas: "ACER NITRO V 15 I9 13900H 16RAM 512SSD RTX 4060 8GB 15.6FHD 144HZ OBSIDIAN BLACK", tipo: "LAPTOP", precio: 5300, imagen: "fotos/AC557.jpg" },
+            { marca: "ACER", sku: "AC419", caracteristicas: "Laptop Acer Nitro V 16 ANV16-72-7809 Intel Core 7 240H 32GB RAM 512GB SSD RTX 5060-8GB 16\" WUXGA", tipo: "LAPTOP", precio: 5600, imagen: "fotos/AC419.jpg" },
+            { marca: "ACER", sku: "AC571", caracteristicas: "ACER PREDATOR HELIOS NEO 16S AI ULTRA 9 275HX 1TB SSD 16GB DDR5 NVIDIA GEFORCE RTX 5060 WQXGA 240HZ PHN16S-71-91AW", tipo: "LAPTOP", precio: 6500, imagen: "fotos/AC571.jpg" },
+            { marca: "ACER", sku: "AC423", caracteristicas: "LAPTOP ACER PREDATOR HELIOS NEO 16 AI ULTRA 9 275HX 16GB DDR5 1TB SSD 16\" WQXGA RTX 5070TI 12 GB WIN", tipo: "LAPTOP", precio: 7700, imagen: "fotos/AC423.jpg" },
+            { marca: "ASUS", sku: "AS542", caracteristicas: "ASUS TUF GAMING A15 FA506NCR-HN057 RYZEN 7 7435HS 16GB 512GB SSD RTX 3050 4GB 15.6\" FHD 144HZ", tipo: "LAPTOP", precio: 3150, imagen: "fotos/AS542.jpg" },
+            { marca: "ASUS", sku: "AS493", caracteristicas: "ASUS TUF GAMING A15 FA507NUR-LP032W RYZEN 7 7435HS 16GB 512GB SSD RTX 4050 6GB 15.6\" FHD 144Hz", tipo: "LAPTOP", precio: 3650, imagen: "fotos/AS493.jpg" },
+            { marca: "ASUS", sku: "AS543", caracteristicas: "ASUS TUF GAMING F16 FX607JU-N3024W I7 13650HX 16GB 512GB SSD RTX 4050 6GB 16\" WUXGA 165HZ", tipo: "LAPTOP", precio: 4150, imagen: "fotos/AS543.jpg" },
+            { marca: "ASUS", sku: "AS544", caracteristicas: "ASUS TUF GAMING F16 FX607JV-N3023W I7 13650HX 16GB 512GB SSD RTX 4060 8GB 16\" WUXGA 165HZ", tipo: "LAPTOP", precio: 4650, imagen: "fotos/AS544.jpg" },
+            { marca: "ASUS", sku: "AS455", caracteristicas: "ASUS TUF GAMING A15 FA507XI-LP025W RYZEN 9 7940HS 16GB 1TB SSD RTX 4070 8GB 15.6\" FHD 144Hz", tipo: "LAPTOP", precio: 5150, imagen: "fotos/AS455.jpg" },
+            { marca: "ASUS", sku: "AS529", caracteristicas: "ASUS TUF GAMING A16 FA608WV-QT013W RYZEN 9 7845HX 16GB 1TB SSD RTX 4060 8GB 16\" 2.5K 240HZ", tipo: "LAPTOP", precio: 5450, imagen: "fotos/AS544.jpg" },
+            { marca: "ASUS", sku: "AS530", caracteristicas: "ASUS TUF GAMING A16 FA608WV-QT015W RYZEN 9 7845HX 32GB 1TB SSD RTX 4060 8GB 16\" 2.5K 240HZ", tipo: "LAPTOP", precio: 5850, imagen: "fotos/AS530.jpg" },
+            { marca: "ASUS", sku: "AS531", caracteristicas: "ASUS TUF GAMING A16 FA608MI-QT014W RYZEN 9 7845HX 16GB 1TB SSD RTX 4070 8GB 16\" 2.5K 240HZ", tipo: "LAPTOP", precio: 6150, imagen: "fotos/AS531.jpg" },
+            { marca: "ASUS", sku: "AS532", caracteristicas: "ASUS TUF GAMING A16 FA608MI-QT016W RYZEN 9 7845HX 32GB 1TB SSD RTX 4070 8GB 16\" 2.5K 240HZ", tipo: "LAPTOP", precio: 6650, imagen: "fotos/AS532.jpg" },
+            { marca: "ASUS", sku: "AS548", caracteristicas: "ASUS ROG STRIX G16 G614JVR-N4090W I9 14900HX 32GB 1TB SSD RTX 4060 8GB 16\" WUXGA 165HZ ECLIPSE GREY", tipo: "LAPTOP", precio: 7150, imagen: "fotos/AS548.jpg" },
+            { marca: "ASUS", sku: "AS549", caracteristicas: "ASUS ROG STRIX G16 G614JIR-N4014W I9 14900HX 32GB 1TB SSD RTX 4070 8GB 16\" WUXGA 165HZ", tipo: "LAPTOP", precio: 7950, imagen: "fotos/AS549.jpg" },
+            { marca: "ASUS", sku: "AS550", caracteristicas: "ASUS ROG STRIX SCAR 16 G634JZR-N4013W I9 14900HX 32GB 1TB SSD RTX 4080 12GB 16\" WQXGA 240HZ", tipo: "LAPTOP", precio: 9950, imagen: "fotos/AS550.jpg" },
+            { marca: "ASUS", sku: "AS551", caracteristicas: "ASUS ROG STRIX SCAR 18 G834JZR-N6013W I9 14900HX 32GB 1TB SSD RTX 4080 12GB 18\" WQXGA 240HZ", tipo: "LAPTOP", precio: 10600, imagen: "fotos/AS551.jpg" }
+        ];
 
-        async function loadProducts() {
-            try {
-                const response = await fetch('productos.json');
-                products = await response.json();
-                populateBrands();
-                displayProducts(products);
-            } catch (error) {
-                console.error('Error cargando el archivo JSON:', error);
-                document.getElementById('productGrid').innerHTML = '<p class="col-span-full text-center text-red-500">Error al cargar productos. Asegúrate de ejecutar esto mediante un servidor local (Live Server).</p>';
-            }
+        function initApp() {
+            populateBrands();
+            displayProducts(products);
+            document.getElementById('searchInput').addEventListener('input', filterProducts);
+            document.getElementById('brandFilter').addEventListener('change', filterProducts);
         }
 
         function populateBrands() {
@@ -136,7 +152,6 @@
             });
         }
 
-        // Filtros reactivos
         function filterProducts() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const selectedBrand = document.getElementById('brandFilter').value;
@@ -150,11 +165,7 @@
             displayProducts(filtered);
         }
 
-        document.getElementById('searchInput').addEventListener('input', filterProducts);
-        document.getElementById('brandFilter').addEventListener('change', filterProducts);
-
-        // Carga inicial
-        loadProducts();
+        window.onload = initApp;
     </script>
 </body>
 </html>

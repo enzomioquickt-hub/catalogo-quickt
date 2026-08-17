@@ -1,68 +1,714 @@
-{
-  "tienda": "Quickt",
-  "version_catalogo": "1.0",
-  "ultima_actualizacion": "2026-08-17",
-  "categorias": ["Laptops Gaming", "Laptops Corporativas", "Impresoras", "Conectividad"],
-  "productos": [
+[
     {
-      "id": "LAP-001",
-      "nombre": "Lenovo LOQ 15IAX9",
-      "marca": "Lenovo",
-      "categoria": "Laptops Gaming",
-      "destacado": true,
-      "precio_regular": 3400.00,
-      "precio_oferta": 3199.00,
-      "disponible": true,
-      "imagen_url": "https://quickt.pe/img/lenovo-loq-15.jpg",
-      "especificaciones": {
-        "procesador": "Intel Core i5-12450HX",
-        "ram": "16 GB DDR5 (Expandible a 32GB)",
-        "almacenamiento": "512 GB SSD M.2 NVMe PCIe 4.0",
-        "tarjeta_grafica": "NVIDIA GeForce RTX 3050 6GB GDDR6",
-        "pantalla": "15.6\" FHD (1920x1080) IPS 144Hz",
-        "sistema_operativo": "Windows 11 Home"
-      },
-      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20Lenovo%20LOQ%2015IAX9"
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC421",
+        "DESCRIPCION": "Acer Aspire Lite Core i7-13620H 16GB DDR5 512GB SSD 15.6\" FHD WIN11 AL15-72P-7055 WINDOWS 11 HOME",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2550
     },
     {
-      "id": "LAP-002",
-      "nombre": "ASUS TUF Gaming F15",
-      "marca": "ASUS",
-      "categoria": "Laptops Gaming",
-      "destacado": true,
-      "precio_regular": 3900.00,
-      "precio_oferta": 3699.00,
-      "disponible": true,
-      "imagen_url": "https://quickt.pe/img/asus-tuf-f15.jpg",
-      "especificaciones": {
-        "procesador": "Intel Core i7-13620H",
-        "ram": "16 GB DDR5 4800MHz",
-        "almacenamiento": "1 TB SSD M.2 NVMe PCIe 4.0",
-        "tarjeta_grafica": "NVIDIA GeForce RTX 4050 6GB GDDR6",
-        "pantalla": "15.6\" FHD 144Hz IPS-level",
-        "sistema_operativo": "Windows 11 Home"
-      },
-      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20ASUS%20TUF%20Gaming%20F15"
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC415",
+        "DESCRIPCION": "ACER ASPIRE LITE AL15-43P RYZEN 7 5825U 32GB DDR4 1TB SSD 15.6\" FHD WIN11 AL15-43P",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2850
     },
     {
-      "id": "LAP-003",
-      "nombre": "HP Victus 15-fb1013la",
-      "marca": "HP",
-      "categoria": "Laptops Gaming",
-      "destacado": false,
-      "precio_regular": 3200.00,
-      "precio_oferta": 2899.00,
-      "disponible": true,
-      "imagen_url": "https://quickt.pe/img/hp-victus-15.jpg",
-      "especificaciones": {
-        "procesador": "AMD Ryzen 5 7535HS",
-        "ram": "16 GB DDR5",
-        "almacenamiento": "512 GB SSD NVMe M.2",
-        "tarjeta_grafica": "NVIDIA GeForce RTX 2050 4GB GDDR6",
-        "pantalla": "15.6\" FHD IPS 144Hz",
-        "sistema_operativo": "Windows 11 Home"
-      },
-      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20HP%20Victus%2015"
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC417",
+        "DESCRIPCION": "ACER NITRO LITE NL16-71G-58BW i5 13420H 16GB RAM 512GB SSD RTX 3050 6GB 16” WUXGA 165Hz NH.DAAAL.002",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3350
+    },
+    {
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC557",
+        "DESCRIPCION": "ACER NITRO V 15 I9 13900H 16RAM 512SSD RTX 4060 8GB 15.6FHD 144HZ OBSIDIAN BLACK",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5300
+    },
+    {
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC419",
+        "DESCRIPCION": "Laptop Acer Nitro V 16 ANV16-72-7809 Intel Core 7 240H 32GB RAM 512GB SSD RTX 5060-8GB 16\" WUXGA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5600
+    },
+    {
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC571",
+        "DESCRIPCION": "ACER PREDATOR HELIOS NEO 16S AI ULTRA 9 275HX 1TB SSD 16GB DDR5 NVIDIA GEFORCE RTX 5060 WQXGA 240HZ PHN16S-71-91AW",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6500
+    },
+    {
+        "MARCA": "ACER",
+        "FOTO": "img/no-image.png",
+        "SKU": "AC423",
+        "DESCRIPCION": "LAPTOP ACER PREDATOR HELIOS NEO 16 AI ULTRA 9 275HX 16GB DDR5 1TB SSD 16\" WQXGA RTX 5070TI 12 GB WIN",
+        "TIPO": "LAPTOP",
+        "PRECIO": 7700
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS044",
+        "DESCRIPCION": "ASUS VIVOBOOK 15 X1504VA-BQ4454W CORE 5 120U 8GB DDR5 512SSD 15.6\" FHD+ WIN11 90NB13Y1'M025K0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2250
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS043",
+        "DESCRIPCION": "ASUS EXPERTBOOK PM1503CDA-S70514 RYZEN 5 150 16GB DDR5 512GB SSD 15.6\" FHD 90NX09D1-M00LB0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2550
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS033",
+        "DESCRIPCION": "ASUS EXPERTBOOK P1503CVA CORE 5 210H 16GB DDR5 512GB SSD 15.6\" FHD P1503CVA-S72381",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2550
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS042",
+        "DESCRIPCION": "ASUS EXPERTBOOK PM1 PM1503CDA-S70276 R7 170 16GB DDR5 512 SSD 15.6\" FHD FREEDOS PM1503CDA-S70276",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3100
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS032",
+        "DESCRIPCION": "ASUS EXPERTBOOK P1503CVA CORE 7 240H 16GB DDR5 512GB SSD 15.6\" FHD P1503CVA-S72120",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3150
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS035",
+        "DESCRIPCION": "ASUS V16 V3607VJ-RP067W CORE 5-210H RAM 8GB DDR5 SSD 512GB SSD NVIDIA GeForce RTX 3050 6G 16\" WUXGA 90NB15V1-M004R0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3150
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS091",
+        "DESCRIPCION": "LAPTOP ASUS A15 FA506NCG RYZEN 7 8845HS 512GB SSD 8GB DDR5 RTX 3050 4GB + MOCHILA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3200
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS039",
+        "DESCRIPCION": "ASUS TUF F16 FX607VJB-RL209 16\" WUXGA IPS Core 5 210H 8GB DDR5 512GB SSD RTX 3050 6GB WHITOUT OS 90NR0MZ6-M00B80",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3300
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS078",
+        "DESCRIPCION": "ASUS VivoBook 16 X1605VAPBF-MB236 16? Intel Core 9-270H 16GB DDR5 SSD 512GB FREE DOS 90NB1343-100X30",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3550
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS074",
+        "DESCRIPCION": "ASUS ZENBOOK 14 OLED UM3406HA-WS74T RYZEN 7-8840HS 512GB SSD 16GB DDR4 14 FULL HD WINDOWS 11 UM3406HA-WS74T",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4200
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS041",
+        "DESCRIPCION": "ASUS VIVOBOOK 14 FLIP TP3407SA CORE ULTRA 7 256V 16GB LPDDR5X 1TB SSD 14 WUXGA OLED TACTIL 90NB14Y1-M005E0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4200
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS040",
+        "DESCRIPCION": "ASUS ZENBOOK RYZEN AI 7 445 1TB 16GB LPDDR5X 14\" OLED WUXGA WINDOWS 11 HOME 90NB17R1-M001H0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4650
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS038",
+        "DESCRIPCION": "ASUS TUF F16 FX608JHR-RV314 I7-14650HX 16GBDDR5 512GB SSD RTX 5050 8GB 16\" WUXGA FREEDOS 90NR0NA1-M00HM0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5600
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS106",
+        "DESCRIPCION": "ASUS TUF A18 RYZEN 7 260 16GB DDR5 1TB SSD RTX 5060 8GB 18\" WUXGA WIN 11 FA808UM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5800
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS034",
+        "DESCRIPCION": "ASUS TUF FX608JHR-RV169 F16 16\" WUXGA i7-14650HX 16GB DDR5 1TB SSD RTX 5050 8GB + MOCHILA + MOUSE FX608JHR-RV169",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5900
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS036",
+        "DESCRIPCION": "ASUS TUF F16 I7 14650HX RAM 16GB DDR5 512 gb SSD RTX 5060 8GB 16\" WUXGA FreeDOS + MOCHILA + MOUSE 90NR0NB1-M00KY0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6100
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS079",
+        "DESCRIPCION": "ASUS ROG STRIX G18 G815JMR-SS74 INTEL CORE I7-14650HX UP TO 5.2GHZ 1TB SSD 16GB DDR5 NVIDIA GEFORCE 90NR0LE1",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6850
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS108",
+        "DESCRIPCION": "ROG G16 RYZEN 9 8940HX 16GB RAM DDR5 1TB SSD RTX 5070 8GB 16\" WUXGA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6999
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS025",
+        "DESCRIPCION": "Laptop Asus ROG Strix G16 G615LM-RV015W Intel Core Ultra 9 275HX Ram 16GB Disco 1TB SSD Video Nvidia RTX 5060 8GB 16\" WUXGA Windows 11 (90NR0LJ1-M000K0)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8100
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS090",
+        "DESCRIPCION": "Laptop Asus ROG Zephyrus G16 GU605CP G16.U95070 Intel Core Ultra 9 285H 16GB RAM 1TB SSD NVIDIA RTX 5070 16\" WQXGA Windows 11",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8100
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS072",
+        "DESCRIPCION": "ASUS ROG STRIX G615J I9-14900HX 32GB RAM DDR5 1TB SSD RTX 5070 8GB 16\" WUXGA G615JPR-AS96",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8200
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS037",
+        "DESCRIPCION": "LAPTOP GAMER ASUS ROG STRIX G18 G815JPR-IS96 INTEL I9 14900HX 32GB RAM 1TB SSD RTX 5070 8GB 18 WUXGA 144HZ WINDOWS 11",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8300
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS030",
+        "DESCRIPCION": "ASUS ROG Strix G18 G814FM-DS95 RYZEN 9 9955HX 16GB DDR5 2TB SSD RTX 5060 8GB 18\" 144Hz G814FM-DS95",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8600
+    },
+    {
+        "MARCA": "ASUS",
+        "FOTO": "img/no-image.png",
+        "SKU": "AS016",
+        "DESCRIPCION": "ROG G16 RYZEN 9 8940HX 16GB RAM DDR5 1TB SSD RTX 5070TI 12GB 16\" WQXGA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 8800
+    },
+    {
+        "MARCA": "DYNABOOK",
+        "FOTO": "img/no-image.png",
+        "SKU": "DYN01",
+        "DESCRIPCION": "Laptop Toshiba Dynabook Satellite Pro C50-K 15.6\" FHD, Intel Core i7-1355U, 16GB, 1TB SSD, Win 11 Pro - PSY29U-4VM001",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3200
+    },
+    {
+        "MARCA": "GIGABYTE",
+        "FOTO": "img/no-image.png",
+        "SKU": "GI03",
+        "DESCRIPCION": "GIGABYTE GAMING A16 CORE I7 13620H 16GB RAM DDR 512GB SSD RTX 5050 8GB 16\" FHD+ CTHI3LA893SH",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4550
+    },
+    {
+        "MARCA": "GIGABYTE",
+        "FOTO": "img/no-image.png",
+        "SKU": "GI04",
+        "DESCRIPCION": "LAPTOP GAMER GIGABYTE A16 GA6H I7-13620H 16GB 1TB SSD GEFORCE RTX 5070 8GB 16 WUXGA 165HZ WINDOWS 11 (CWHI3US894SH)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5700
+    },
+    {
+        "MARCA": "GIGABYTE",
+        "FOTO": "img/no-image.png",
+        "SKU": "GI05",
+        "DESCRIPCION": "LAPTOP GAMER GIGABYTE AERO X16 RYZEN AI 7-350 16GB 1TB SSD GEFORCE RTX 5060 8GB 16 QHD+ 165HZ WINDOWS 11 (1VH93USC94AH)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6000
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP012",
+        "DESCRIPCION": "LAPTOP HP 14-DQ6105DX INTEL N150 4GB LLDDR5 128 GB SSD 14 HD",
+        "TIPO": "LAPTOP",
+        "PRECIO": 1150
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP048",
+        "DESCRIPCION": "HP 15-fd0152la i5-1334U 8GB DDR4 512GBSSD 15.6\" FHD TÁCTIL FreeDOS",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2300
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP046",
+        "DESCRIPCION": "HP 250R CORE 5 120U 16GB DDR4 512GB SSD 15.6\" FHD CT8DYAT#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2300
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP042",
+        "DESCRIPCION": "HP 15-FD0260LA CORE 5 120U 16GB RAM DDR4 512GB SSD 15.6\" FHD FREEDOS B9TX9LA#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2350
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP090",
+        "DESCRIPCION": "HP 250 G10 Intel Core i7-1355U 8GB 512GB M.2 LCD 15.6\" FreeDOS 3.0",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2550
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP041",
+        "DESCRIPCION": "HP 15-FC0279LA R7 7730U 16GB RAM DDR4 1TB SSD 15.6\" FHD FreeDOS B9TR8LA#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2750
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP043",
+        "DESCRIPCION": "All In One HP ProOne 240 All-in-One G10 Intel Core i5 512GB SSD 16GB Negro CQ1V5LT#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2800
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP047",
+        "DESCRIPCION": "HP ProOne 440 G9 Core i5-14500 16GB DDR5 1TB SSD 23.8\" FHD WIN11 PRO",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3100
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP052",
+        "DESCRIPCION": "HP VICTUS 15-FA2035LA CORE I5-13420H 8GB DDR4 512GB SSD RTX 3050 6GB 15.6\" FHD D74JMLA#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3150
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP112",
+        "DESCRIPCION": "HP Victus 15-FB3019LA Ryzen 7 7445HS Ram 8GB Disco 512GB SSD Video NVIDIA RTX 3050 6GB 15.6″ FHD FreeDOS (BT4F6LA#ABM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3200
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP050",
+        "DESCRIPCION": "HP VICTUS 15-FB3009LA RYZEN 5 8645HS 8GB DDR5 512GB SSD RTX 3050 6G 15.6\" FHD 144Hz BA1U9LA#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3300
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP140",
+        "DESCRIPCION": "LAPTOP HP OMNIBOOK X FLIP 16AS0023DX ULTRA 7 256V 16GB LPDDR5X 1TB SSD 16\" 2K TACTIL WIN 11",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4500
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP115",
+        "DESCRIPCION": "HP OMEN GAMING 16AM0073DX CORE ULTRA 7 255H 16GB DDR5 1TB SSD 16 2K 144Hz RTX 5060 8GB W11 BZ4A3UA#ABA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6100
+    },
+    {
+        "MARCA": "HP",
+        "FOTO": "img/no-image.png",
+        "SKU": "HP049",
+        "DESCRIPCION": "HP OMEN 17-db1002la Ryzen AI 9 365 32GB DDR5 1TB SSD RTX 5060 8GB 17.3\" FHD IPS FREEDOS CW4G9LA#ABM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6850
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE061",
+        "DESCRIPCION": "LENOVO V15 G5 IRL I3-1315U 8GB DDR5 512GB SSD 15.6\" FHD 83GW005MLD",
+        "TIPO": "LAPTOP",
+        "PRECIO": 1750
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE209",
+        "DESCRIPCION": "LENOVO V15 G4 AMN R5 8GB RAM 256GB SSD 15.6 FHD FREE DOS ARTIC GREY FRE-DOS (82YU00X6LM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 1780
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE056",
+        "DESCRIPCION": "Laptop Lenovo V15 G5 IRL Intel Core i5 13420H RAM 8GB Disco 512GB SSD 15.6\" FHD FreeDOS (83GW005LLD)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2250
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE050",
+        "DESCRIPCION": "LENOVO IDEAPAD SLIM3 15AMN8 R5 7520U 8GB 512GB 15.6\" FREEDOS + Lenovo® 15.6\" Laptop Casual Toploader 82XQ00N5LM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2300
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE051",
+        "DESCRIPCION": "LENOVO IDEAPAD SLIM3 15AMN8 R5 7520U 16GB 512GB 15.6\" FREEDOS +Lenovo® 15.6\" Laptop Casual Toploader 82XQ00N6LM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2450
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE060",
+        "DESCRIPCION": "LENOVO IDEAPAD SLIM 3 14ARP10 RYZEN 7 7735HS 16GB DDR5 512GB SSD 14\" WUXGA OLED 83K600B6LM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2550
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE210",
+        "DESCRIPCION": "Laptop Lenovo V15 G4 ABP Ryzen 7 7730U Ram 16GB Disco 512GB SSD 15.6\" FHD FreeDos (82YY002YLM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2650
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE059",
+        "DESCRIPCION": "LENOVO IP SLIM3 15IRH10 I7-13620H 16GB 512GB 15.3\" FDOS+ MOCHILA GX41L83768 83K101FFLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2700
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE058",
+        "DESCRIPCION": "LENOVO IDEAPAD SLIM 5 14IRH10 I5 13420H 16GB 512GB 14\" OLED FREEDOS 83K000MDLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2700
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE091",
+        "DESCRIPCION": "LENOVO LOQ 15IAX9E I5-12450HX 8GB RAM 512 GB SSD RTX 3050 6GB 15.6\" FHD",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2700
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE282",
+        "DESCRIPCION": "LENOVO IDEAPAD 5 2-IN-1 14AHP9 RYZEN 7 8845HS 16GB RAM 512GB SSD 14\" WUXGA TS (83DR007QLM) OPEN BOX SIN LÁPIZ",
+        "TIPO": "LAPTOP",
+        "PRECIO": 2900
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE016",
+        "DESCRIPCION": "IDEAPAD SLIM 3 15IRH10 I7-13620H, SSD 512 GB , RAM 16GB DDR5, PANTALLA 15.3\" WUXGA TOUCH SCREEN , TECLADO EN ESPAÑOL,FREEDOS ,LUNA GREY (83K100KCLM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3050
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE212",
+        "DESCRIPCION": "Lenovo IdeaPad Slim 3 15IRH10 I7-13620H 24GB DDR5 512GB SSD 15.3\" WUXGA 83K100KFLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3100
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE030",
+        "DESCRIPCION": "LAPTOP LENOVO V15 G5 IRL I7-13620H 16GB DDR5 1TB SSD 15.6 FHD FREEDOS (83GW005FLD)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3200
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE289",
+        "DESCRIPCION": "Laptop Lenovo IdeaPad 5 2 en 1 Gen 10 AMD Ryzen AI 7 350 Ram 16GB Disco 512GB SSD 14'' WUXGA Táctil (83KT006NLM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3200
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE067",
+        "DESCRIPCION": "Lenovo LOQ 15ARP10E RYZEN 7 7735HS 16GB DDR5 512GB SSD RTX 3050 6GB 15.6\" FHD FREEDOS (83S0004HLM) 8S0004HLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3350
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE047",
+        "DESCRIPCION": "LENOVO IDEAPAD SLIM 3 15IRH10 CORE I7-13620H 16GB DDR5 1TB SSD 15.3\" FHD FREEDOS 83K100NALM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3400
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE063",
+        "DESCRIPCION": "LENOVO IdeaPad Slim 5 14IMH10 ULTRA 9 185H 16GB DDR5 512GB SSD 14\" WUXGA OLED 83V6004GLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3400
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE090",
+        "DESCRIPCION": "LENOVO LOQ ESSENTIAL 15IRX11 CORE I5 13450HX 512GB SSD 16GB DDR5 RTX 5050 8GB 15.6FHD (83SC0055LM) 83SC0055LM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3900
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE044",
+        "DESCRIPCION": "LENOVO LOQ 15ARP10E RYZEN 7 7735HS 16GB DDR5 512GB SSD RTX 4050 6GB 15.6\" FHD WIN 1183S0004ALM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4000
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE290",
+        "DESCRIPCION": "LENOVO LOQ 15AHP10 RYZEN 7 250 512GB SSD 16 GB RAM RTX 5050 8 GB 15.6 FHD (83JG007VLM) 83JG007VLM RETROILUMINADO BLANCO",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4600
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE022",
+        "DESCRIPCION": "LAPTOP LENOVO LOQ 15IRX10 INTEL CORE I7 13700HX 16GB RAM 512GB SSD RTX 5050 8GB 15.6 FHD IPS 144HZ (83JE00Q8LM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 4800
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE291",
+        "DESCRIPCION": "LENOVO LOQ 15AHP10 RYZEN 7 250 1TB SSD 16 GB RAM RTX 5060 8 GB 15.6 FHD (83JG00BDLM) 83JG00BDLM RETROILUMINADO BLANCO",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5100
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE036",
+        "DESCRIPCION": "LENOVO ThinkPad T16 Gen 3 Ultra 5 125U 16GB DDR5 512GB SSD 16\" WUXGA WIN 11 21MQ000WLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5500
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE301",
+        "DESCRIPCION": "LENOVO LEGION SLIM 5 16AHP9 RYZEN 7 8845HS 16GB RAM 512GB SSD RTX 4060 8GB 16\" WQXGA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5600
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE054",
+        "DESCRIPCION": "LENOVO LEGION 5 15IRX10 I7-13650HX 16GB DDR5 1TB SSD RTX5060 8GB 15.3\" WUXGA 165HZ 83LY00SRLM",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5650
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE300",
+        "DESCRIPCION": "LENOVO LEGION SLIM 5 16AHP9 RYZEN 7 8845HS 16GB RAM 512GB SSD RTX 4070 8GB 16\" WQXGA",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5800
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE027",
+        "DESCRIPCION": "LENOVO LEGION 5 16IRX9 I9 14900HX 16RAM 512 GB SSD RTX 4070 8GB 16\" WQXGA (83DG00P5LM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6200
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE275",
+        "DESCRIPCION": "LENOVO LEGION PRO 5 16IRX9 I914900HX 16RAM 1 TBSSD RTX 4060 8GB 16\" WQXGA 240Hz",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6300
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE038",
+        "DESCRIPCION": "LENOVO LEGION PRO 5 16ADR10 RYZEN 9 8945HX 32GB RAM DDR5 1TB SSD RTX 5060 8GB 16. WQXGA (83LT002MLM) 83LT002MLM ESPAÑOL",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6800
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE032",
+        "DESCRIPCION": "Laptop Gamer Legion Pro 5i 16IRX10, Intel Core i9 14900HX, 32GB RAM DDR5, 16″ WQXGA IPS, RTX 5060 8GB, 1TB SSD M.2, (83NN0058LM) ESPAÑOL",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6850
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE079",
+        "DESCRIPCION": "LEGION 5 15IRX10 CORE I9-14900HX 1TB SSD 16GB DDR5 RTX 5070 8GB 15.1 WQXGA 165HZ (83LY0007US) 83LY0007US",
+        "TIPO": "LAPTOP",
+        "PRECIO": 7200
+    },
+    {
+        "MARCA": "LENOVO",
+        "FOTO": "img/no-image.png",
+        "SKU": "LE034",
+        "DESCRIPCION": "LENOVO LEGION 7I 16IAX10 ULTRA 9 275HX 32GB DDR5 1TB SSD RTX 5070 8GB 16´ WQXGA OLED (83KY005NLM)",
+        "TIPO": "LAPTOP",
+        "PRECIO": 10600
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS612",
+        "DESCRIPCION": "MSI THIN 15 B13VE CORE I7-13620H SSD 512GB RAM 16GB DDR4 15.6 FHD 144HZ TARJETA RTX 4050 6GBTECLADO EN ESPAÑOL, WINDOWS 11 HOME + MOCHILA.",
+        "TIPO": "LAPTOP",
+        "PRECIO": 3950
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS623",
+        "DESCRIPCION": "MSI Cyborg 15 B2RWEKG Core 7 240H RAM 16GB DDR5 512GB SSD RTX5060 8GB Win11 15.6\" FHD GARANTÍA 2 AÑOS",
+        "TIPO": "LAPTOP",
+        "PRECIO": 5400
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS621",
+        "DESCRIPCION": "MSI KATANA 15 HX B14WFK CORE I7-14650HX 16GB RAM DDR5 512GB SSD RTX 5060 8GB 15.6\" FHD 144Hz TECLADO EN ESPAÑOL",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6050
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS618",
+        "DESCRIPCION": "MSI PULSE17 IA C1VGKG ULTRA 7 155H SSD 1TB RAM 16GB DDR5 TARJETA RTX 4070 8GB PANTALLA 17.3 165H, WINDOWS 11 HOME.",
+        "TIPO": "LAPTOP",
+        "PRECIO": 6300
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS628",
+        "DESCRIPCION": "Laptop Gamer MSI Vector 16 HX A2XWHG Intel Ultra 7 255HX 16GB SSD512GB RTX5070Ti 12GB Wind11 Home",
+        "TIPO": "LAPTOP",
+        "PRECIO": 7100
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS613",
+        "DESCRIPCION": "MSI VECTOR 16 HX A14VHG-692US I9-14900HX UP TO 5.8GHZ 1TB SSD 32GB DDR5 RTX 4080 16GB 240HzZ WINDOWS 11 COLOR COSMO GREY",
+        "TIPO": "LAPTOP",
+        "PRECIO": 9600
+    },
+    {
+        "MARCA": "MSI",
+        "FOTO": "img/no-image.png",
+        "SKU": "MS632",
+        "DESCRIPCION": "Laptop MSI Vector 16 HX Core Ultra 9 275HX, RTX 5080 16GB, 16GB RAM, 1TB SSD, 16\" WQXGA, Windows 11",
+        "TIPO": "LAPTOP",
+        "PRECIO": 9700
     }
-  ]
-}
+]

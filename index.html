@@ -287,7 +287,7 @@
                 const priceFormatted = isNaN(priceNum) ? product.PRECIO : `S/ ${priceNum.toLocaleString('es-PE', {minimumFractionDigits: 2})}`;
                 
                 // Handling Image (if nan or empty)
-                let imgsrc="img/${producto.SKU}.jpg" onerror="this.onerror=null; this.src='https://via.placeholder.com/300?text=Sin+Imagen';"
+                let imgSrc = product.FOTO;
                 if (!imgSrc || imgSrc === 'nan' || imgSrc === '') {
                     imgSrc = 'https://via.placeholder.com/400x300/f4f4f5/a1a1aa?text=Sin+Imagen';
                 }

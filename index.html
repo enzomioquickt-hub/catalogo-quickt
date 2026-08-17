@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quickt S.A.C. - Catálogo de Productos</title>
+    <title>QUICKT S.A.C. - Catálogo de Productos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -240,7 +240,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Quickt S.A.C. - Distribuidor Autorizado de Laptops. Todos los derechos reservados.</p>
+        <p>&copy; 2026 QUICKT S.A.C. - Distribuidor Autorizado de Laptops. Todos los derechos reservados.</p>
         <p>Av. Inca Garcilazo de la Vega 1251, Int. 124. Galería Compu Plaza, Lima, Perú.</p>
     </footer>
 
@@ -286,13 +286,10 @@
                 const priceNum = parseFloat(product.PRECIO);
                 const priceFormatted = isNaN(priceNum) ? product.PRECIO : `S/ ${priceNum.toLocaleString('es-PE', {minimumFractionDigits: 2})}`;
                 
-                // Handling Image (if nan or empty)
-                let imgSrc = product.FOTO;
-                if (!imgSrc || imgSrc === 'nan' || imgSrc === '') {
-                    imgSrc = 'https://via.placeholder.com/400x300/f4f4f5/a1a1aa?text=Sin+Imagen';
-                }
+                // --- MODIFICACIÓN: Asignación automática de imagen por SKU ---
+                const imgSrc = `img/${product.SKU}.jpg`;
 
-                const msg = encodeURIComponent(`Hola Quickt S.A.C., estoy interesado en la laptop SKU: ${product.SKU} - ${product.MARCA}. ¿Tienen stock?`);
+                const msg = encodeURIComponent(`Hola QUICKT S.A.C., estoy interesado en la laptop SKU: ${product.SKU} - ${product.MARCA}. ¿Tienen stock?`);
                 const whatsappLink = `https://wa.me/51970701782?text=${msg}`;
 
                 const card = document.createElement('div');

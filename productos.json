@@ -1,0 +1,68 @@
+{
+  "tienda": "Quickt",
+  "version_catalogo": "1.0",
+  "ultima_actualizacion": "2026-08-17",
+  "categorias": ["Laptops Gaming", "Laptops Corporativas", "Impresoras", "Conectividad"],
+  "productos": [
+    {
+      "id": "LAP-001",
+      "nombre": "Lenovo LOQ 15IAX9",
+      "marca": "Lenovo",
+      "categoria": "Laptops Gaming",
+      "destacado": true,
+      "precio_regular": 3400.00,
+      "precio_oferta": 3199.00,
+      "disponible": true,
+      "imagen_url": "https://quickt.pe/img/lenovo-loq-15.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i5-12450HX",
+        "ram": "16 GB DDR5 (Expandible a 32GB)",
+        "almacenamiento": "512 GB SSD M.2 NVMe PCIe 4.0",
+        "tarjeta_grafica": "NVIDIA GeForce RTX 3050 6GB GDDR6",
+        "pantalla": "15.6\" FHD (1920x1080) IPS 144Hz",
+        "sistema_operativo": "Windows 11 Home"
+      },
+      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20Lenovo%20LOQ%2015IAX9"
+    },
+    {
+      "id": "LAP-002",
+      "nombre": "ASUS TUF Gaming F15",
+      "marca": "ASUS",
+      "categoria": "Laptops Gaming",
+      "destacado": true,
+      "precio_regular": 3900.00,
+      "precio_oferta": 3699.00,
+      "disponible": true,
+      "imagen_url": "https://quickt.pe/img/asus-tuf-f15.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-13620H",
+        "ram": "16 GB DDR5 4800MHz",
+        "almacenamiento": "1 TB SSD M.2 NVMe PCIe 4.0",
+        "tarjeta_grafica": "NVIDIA GeForce RTX 4050 6GB GDDR6",
+        "pantalla": "15.6\" FHD 144Hz IPS-level",
+        "sistema_operativo": "Windows 11 Home"
+      },
+      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20ASUS%20TUF%20Gaming%20F15"
+    },
+    {
+      "id": "LAP-003",
+      "nombre": "HP Victus 15-fb1013la",
+      "marca": "HP",
+      "categoria": "Laptops Gaming",
+      "destacado": false,
+      "precio_regular": 3200.00,
+      "precio_oferta": 2899.00,
+      "disponible": true,
+      "imagen_url": "https://quickt.pe/img/hp-victus-15.jpg",
+      "especificaciones": {
+        "procesador": "AMD Ryzen 5 7535HS",
+        "ram": "16 GB DDR5",
+        "almacenamiento": "512 GB SSD NVMe M.2",
+        "tarjeta_grafica": "NVIDIA GeForce RTX 2050 4GB GDDR6",
+        "pantalla": "15.6\" FHD IPS 144Hz",
+        "sistema_operativo": "Windows 11 Home"
+      },
+      "whatsapp_link": "https://wa.me/51970701782?text=Hola%20Quickt,%20estoy%20interesado%20en%20la%20HP%20Victus%2015"
+    }
+  ]
+}

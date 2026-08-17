@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICKT | Lista de Precios Distribuidores</title>
+    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        quicktOrange: '#FF6600',
+                        quicktDark: '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header / Banner -->
+    <header class="bg-quicktDark text-white shadow-md border-b-4 border-quicktOrange">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-wider text-quicktOrange">QUICKT S.A.C.</h1>
+                <p class="text-sm text-gray-300 mt-1">📍 Av. Inca Garcilazo de la Vega 1251, Int. 124. Galería Compu Plaza</p>
+            </div>
+            <div class="mt-4 md:mt-0 text-right">
+                <p class="text-xs text-gray-400">Asesores Autorizados:</p>
+                <div class="flex gap-4 mt-1">
+                    <a href="https://wa.me/51970701782" target="_blank" class="bg-green-600 hover:bg-green-700 text-white text-xs px-3 py-1.5 rounded font-semibold transition">💬 970 701 782</a>
+                    <a href="https://wa.me/51997752954" target="_blank" class="bg-green-600 hover:bg-green-700 text-white text-xs px-3 py-1.5 rounded font-semibold transition">💬 997 752 954</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Controls / Filters -->
+    <section class="container mx-auto px-4 my-6">
+        <div class="bg-white p-4 rounded-lg shadow flex flex-col md:flex-row gap-4 items-center justify-between">
+            <div class="w-full md:w-1/2">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar por modelo, características o SKU (ej. AC421)..." 
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-quicktOrange">
+            </div>
+            <div class="w-full md:w-1/4">
+                <select id="brandFilter" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-quicktOrange">
+                    <option value="">Todas las Marcas</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Catalog Grid -->
+    <main class="container mx-auto px-4 mb-12">
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
+        </div>
+        <div id="noResults" class="hidden text-center py-12 text-gray-500 text-lg">
+            No se encontraron productos con los criterios de búsqueda.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-quicktDark text-gray-400 text-center py-6 border-t border-gray-800">
+        <p class="text-sm">Precios en S/ (soles) — Solo para distribuidores autorizados.</p>
+        <p class="text-xs mt-2 text-gray-500">QUICKT S.A.C. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de lógica de carga y filtrado -->
+    <script>
+        let products = [];
+
+        async function loadProducts() {
+            try {
+                const response = await fetch('productos.json');
+                products = await response.json();
+                populateBrands();
+                displayProducts(products);
+            } catch (error) {
+                console.error('Error cargando el archivo JSON:', error);
+                document.getElementById('productGrid').innerHTML = '<p class="col-span-full text-center text-red-500">Error al cargar productos. Asegúrate de ejecutar esto mediante un servidor local (Live Server).</p>';
+            }
+        }
+
+        function populateBrands() {
+            const brands = [...new Set(products.map(p => p.marca))].sort();
+            const select = document.getElementById('brandFilter');
+            brands.forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                select.appendChild(option);
+            });
+        }
+
+        function displayProducts(items) {
+            const grid = document.getElementById('productGrid');
+            const noResults = document.getElementById('noResults');
+            grid.innerHTML = '';
+
+            if (items.length === 0) {
+                noResults.classList.remove('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col justify-between overflow-hidden border border-gray-200';
+                
+                card.innerHTML = `
+                    <div class="relative bg-white p-4 h-48 flex items-center justify-center border-b">
+                        <span class="absolute top-2 left-2 bg-quicktDark text-white text-xs px-2 py-1 rounded font-bold">${product.marca}</span>
+                        <span class="absolute top-2 right-2 bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded font-mono">SKU: ${product.sku}</span>
+                        <img src="${product.imagen}" alt="${product.sku}" class="max-h-full max-w-full object-contain" onerror="this.onerror=null;this.src='https://via.placeholder.com/200?text=Sin+Imagen';">
+                    </div>
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <p class="text-xs text-quicktOrange font-semibold mb-1">${product.tipo}</p>
+                            <h3 class="text-sm font-medium text-gray-700 line-clamp-3 mb-3">${product.caracteristicas}</h3>
+                        </div>
+                        <div>
+                            <div class="text-xl font-black text-gray-900 mb-3">S/ ${product.precio.toLocaleString('es-PE')}</div>
+                            <a href="https://wa.me/51970701782?text=Hola,%20estoy%20interesado%20en%20el%20producto%20SKU:%20${product.sku}" target="_blank" 
+                               class="block w-full text-center bg-quicktOrange hover:bg-orange-600 text-white text-sm font-bold py-2 rounded transition">
+                                Cotizar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filtros reactivos
+        function filterProducts() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const selectedBrand = document.getElementById('brandFilter').value;
+
+            const filtered = products.filter(p => {
+                const matchesQuery = p.caracteristicas.toLowerCase().includes(query) || p.sku.toLowerCase().includes(query);
+                const matchesBrand = selectedBrand === "" || p.marca === selectedBrand;
+                return matchesQuery && matchesBrand;
+            });
+
+            displayProducts(filtered);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', filterProducts);
+        document.getElementById('brandFilter').addEventListener('change', filterProducts);
+
+        // Carga inicial
+        loadProducts();
+    </script>
+</body>
+</html>
